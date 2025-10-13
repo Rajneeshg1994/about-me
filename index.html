@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rajneesh Kumar Gupta | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0d3b66;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff9f00;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #0d3b66;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ff9f00;
+      padding-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    /* Personal Info Section with Flexbox */
+    .personal-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    /* Passport size photo (Square) */
+    .personal-info img {
+      width: 180px;
+      height: 180px;
+      border-radius: 8px; /* Square edges */
+      border: 3px solid #ff9f00;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .personal-details {
+      max-width: 70%;
+      text-align: left;
+    }
+
+    .personal-details p {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .skills-list span {
+      background-color: #ff9f00;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .whatsapp-chat {
+      text-align: center;
+      background: #e3f9e5;
+      border: 1px solid #28a745;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .whatsapp-chat a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 30px;
+      background: #25D366;
+      color: white;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-chat a:hover {
+      background: #128C7E;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0d3b66;
+      color: white;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .skills-list {
+        flex-direction: column;
+      }
+
+      .whatsapp-chat a {
+        width: 100%;
+      }
+
+      .personal-info {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .personal-details {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .personal-info img {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 16px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      .skills-list span {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+
+      .whatsapp-chat a {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rajneesh Kumar Gupta</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#career">Career Objective</a></li>
+        <li><a href="#summary">Professional Summary</a></li>
+        <li><a href="#experience">Professional Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#chat">Chat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <!-- Personal Info with Image -->
+    <div class="personal-info">
+      <div class="personal-details">
+        <p><strong>Full Name:</strong> Rajneesh Kumar Gupta</p>
+        <p><strong>Date of Birth:</strong> 29 April 1994</p>
+        <p><strong>Address:</strong> Dalpatti, Bhrigu Ashram, City/District: Ballia (U.P.) 277001</p>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Blood Group:</strong> A+</p>
+        <p><strong>Marital Status:</strong> Unmarried</p>
+        <p><strong>Nationality:</strong> Indian</p>
+        <p><strong>Strengths:</strong> Positive Attitude, Quick Learner</p>
+        <p><strong>Languages Known:</strong> English, Hindi</p>
+        <p>I am an IT professional with over 5 years of experience specializing in Oracle PL/SQL, Oracle Forms and Reports, and 1 year experience in Oracle APEX. I am passionate about clean code, databases, and enterprise systems development.</p>
+      </div>
+
+      <!-- Passport size photo -->
+      <!--img src="https://drive.google.com/file/d/1_YqzTIj31Uj5vYyx0V0aiq_MAaS8n0N0/view?usp=sharing" alt="Rajneesh Kumar Gupta" /--> <!-- Replace with your photo URL -->
+      <img src="https://drive.google.com/uc?export=view&id=1_YqzTIj31Uj5vYyx0V0aiq_MAaS8n0N0" alt="Rajneesh Kumar Gupta" />
+    </div>
+  </section>
+
+  <!-- Career Objective Section -->
+  <section id="career">
+    <h2>Career Objective</h2>
+    <p>Aiming for a challenging career in a dynamic organization that encourages continuous learning, innovation, and fosters personal and professional growth, while aligning with the organization's objectives.</p>
+  </section>
+
+  <!-- Professional Summary Section -->
+  <section id="summary">
+    <h2>Professional Summary</h2>
+    <ul>
+      <li>Over 5 years of IT experience in the implementation, customization, maintenance & support of Oracle Applications (10g, 11g, 12c), including Oracle Forms and Reports.</li>
+      <li>Currently serving as Senior Software Engineer at Eastern Software Solutions Pvt. Ltd.</li>
+      <li>1 year of hands-on experience with Oracle APEX for application Customization, support & enhancement, specifically for the project Save-Mart Trading Ltd.</li>
+      <li>Proficient in PL/SQL and skilled in developing stored procedures, triggers, and functions.</li>
+      <li>Expertise in Oracle Database, Oracle Forms & Reports (12c & 19c) installation, Oracle APEX Installation, administration, and performance tuning.</li>
+      <li>Experienced with Oracle Forms Builder, Reports Builder, SQL Developer, and Toad.</li>
+      <li>Strong ability to troubleshoot, analyze, and resolve database issues and support end-users.</li>
+    </ul>
+  </section>
+
+  <!-- Professional Experience Section -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <h3>Role: System Administrator</h3>
+    <p><strong>Organization:</strong> ITwings Infosystem Pvt. Ltd. — Delhi</p>
+    <p><strong>Duration:</strong> 14th August 2025 – Present</p>
+    <p><strong>Clients:</strong> IRCTC (Support & Enhancement)</p>
+
+    <h3>Role: Senior Software Engineer</h3>
+    <p><strong>Organization:</strong> Eastern Software Solutions Pvt. Ltd. — NOIDA, U.P.</p>
+    <p><strong>Duration:</strong> 01st March 2022 – 2nd December 2024</p>
+    <p><strong>Clients:</strong> Compovine Technologies Ltd., Coleman Cable and Wire (CTIL), Polysmart Packaging Ltd., Hoima Sugar Ltd., Save-Mart Trading Ltd., Elys Chemical Industrial Pvt. Ltd.</p>
+
+    <ul>
+      <li>Developed and maintained database objects like Tables, Views, Materialized Views, Indexes, Sequences, Procedures, and Functions.</li>
+      <li>Modified and enhanced PL/SQL procedures, functions, and triggers based on client specifications.</li>
+      <li>Involved in the customization and development of Oracle Forms and Reports.</li>
+      <li>Worked on Oracle APEX development for creating dynamic web applications for Save-Mart Trading Ltd.</li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Oracle PL/SQL</span>
+      <span>Oracle Forms</span>
+      <span>Oracle Reports</span>
+      <span>Oracle APEX</span>
+      <span>SQL</span>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rajneeshg1994@gmail.com">rajneeshg1994@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/rajneeshg1994" target="_blank">github.com/rajneeshg1994</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/rajneeshg1994" target="_blank">linkedin.com/in/rajneeshg1994</a></p>
+  </section>
+
+  <!-- WhatsApp Chat Section -->
+  <section id="chat" class="whatsapp-chat">
+    <h2>Chat with Me on WhatsApp</h2>
+    <p>Want to discuss something? Click below to start chatting with me on WhatsApp.</p>
+    <a href="https://wa.me/919506847003" target="_blank">Start WhatsApp Chat</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rajneesh Kumar Gupta. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
